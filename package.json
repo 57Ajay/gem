@@ -1,0 +1,26 @@
+{
+  "name": "gem-assist",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "build": "bun build src/index.ts --outfile dist/gem --compile --minify",
+    "dev": "bun --watch src/index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/inquirer": "^9.0.8",
+    "@types/node": "^22.15.18",
+    "@types/yargs": "^17.0.33"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "chalk": "^5.4.1",
+    "inquirer": "^12.6.1",
+    "yargs": "^17.7.2"
+  }
+}
